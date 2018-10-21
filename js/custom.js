@@ -47,7 +47,7 @@
   });
 
   $('#problem').vide({
-    mp4: 'video/pineisland.mp4',
+    mp4: 'video/video-bg.mp4',
   },{
     className: 'video-bg',
   });
