@@ -76,16 +76,8 @@
   <section id="poles" class="section-padding wow fadeInUp">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ">
-          <h2>
-            Changes over the years
-          </h2>
-          <p>
-            Lorem ipsum
-          </p>
-        </div>
-        <div class="col-md-6 gallery">
-          <div class="col-md-12 gallery--holder active" data-gallery="1">
+        <div class="col-md-12 gallery">
+          <div class="col-md-4 gallery--holder active" data-gallery="1">
             <div id="comparison">
               <figure>
                 <div id="divisor1"></div>
@@ -93,7 +85,7 @@
               <input type="range" min="0" max="100" value="50" id="slider1" oninput="moveDivisor(1)">
             </div>            
           </div>
-          <div class="col-md-12 gallery--holder" data-gallery="2">
+          <div class="col-md-4 gallery--holder" data-gallery="2">
             <div id="comparison">
               <figure>
                 <div id="divisor2"></div>
@@ -101,30 +93,13 @@
               <input type="range" min="0" max="100" value="50" id="slider2" oninput="moveDivisor(2)">
             </div>            
           </div>
-          <div class="col-md-12 gallery--holder" data-gallery="3">
+          <div class="col-md-4 gallery--holder" data-gallery="3">
             <div id="comparison">
               <figure>
                 <div id="divisor3"></div>
               </figure>
               <input type="range" min="0" max="100" value="50" id="slider3" oninput="moveDivisor(3)">
             </div>            
-          </div>
-          <div class="gallery-links col-md-12">
-            <div class="col-md-4 text-center">
-              <button class="show-gallery btn btn-new active" data-button-gallery="1">
-                Muir Glacier
-              </button>
-            </div>
-            <div class="col-md-4 text-center">
-              <button class="show-gallery btn btn-new" data-button-gallery="2">
-                Pedersen Glacier
-              </button>
-            </div>
-            <div class="col-md-4 text-center">
-              <button class="show-gallery btn btn-new" data-button-gallery="3">
-                Icesea
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -134,7 +109,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div id="data-chart"></div>
+          <div id="chart-mass"></div>
+        </div>
+        <div class="col-md-12">
+        	<div id="chart-global-temperature"></div>
+        </div>
+        <div class="col-md-12">
+        	<iframe data-width="600" data-height="400" width="980" height="653" src="https://www.mapbox.com/bites/00183/polarmap.html#3.53/-0.43/-11.58" allowfullscreen="" frameborder="0"></iframe>
         </div>
       </div>
     </div>
@@ -180,6 +161,8 @@
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script type="text/javascript" src="js/arcticsMass.json"></script>
   <script type="text/javascript" src="js/arctisMassYears.json"></script>
+  <script type="text/javascript" src="js/globalTempYears.json"></script>
+  <script type="text/javascript" src="js/globalTempValues.json"></script>
   <script src="js/custom.js"></script>
 </body>
 
