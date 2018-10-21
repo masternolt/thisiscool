@@ -46,8 +46,17 @@
     }
   });
 
+  $('.gallery-btn').on('click', function(event) {
+    
+    var galleryId = $(this).attr('data-gallery-item');
+
+    $('.gallery--holder.active').fadeOut(600).promise().done(function(){
+      $('[data-gallery="'+ galleryId +'"]').fadeIn().addClass('active');
+    });
+  });
+
   $('#problem').vide({
-    mp4: 'video/video-bg.mp4',
+    mp4: 'video/pineisland.mp4',
   },{
     className: 'video-bg',
   });
@@ -84,7 +93,7 @@ function moveDivisor(n) {
 
 function mountChart(){
   Highcharts.theme = {
-    colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
+    colors: ['#2b908f', '#a00000bf', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066',
         '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
     chart: {
         backgroundColor: {
@@ -288,13 +297,7 @@ Highcharts.setOptions(Highcharts.theme);
 
   Highcharts.chart('chart-mass', {
     chart: {
-      type: 'column',
-      options3d: {
-        enabled: true,
-        alpha: 10,
-        beta: 25,
-        depth: 70
-      }
+      type: 'area',
     },
     title: {
       text: 'Arctic mass over the years'
@@ -322,8 +325,11 @@ Highcharts.setOptions(Highcharts.theme);
       }
     },
     series: [{
-      name: 'Mass',
-      data: arctictMassData
+      name: 'Before 2000',
+      data: arctictMassData,
+    },{
+      name: 'After 2000',
+      data: arctictMassDataAfter,
     }]
   });
 

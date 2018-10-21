@@ -90,6 +90,10 @@ div#comparison figure div{
   background-image: url('../img/icesea_old.jpg');
 }
 
+[data-gallery="2"],[data-gallery="3"]{
+  display: none;
+}
+
 
 input[type=range]{
   -webkit-appearance:none;
