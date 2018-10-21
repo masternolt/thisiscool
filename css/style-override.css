@@ -17,12 +17,17 @@
 
 #problem .overlay .overlay-detail a i{
 	bottom: 0;
-    color: #2c363e;
-    border: 1px solid #2c363e;
+  color: #2c363e;
+  border: 1px solid #2c363e;
+  width: 55px;
+  height: 55px;
 }
 
-
-
+#problem .overlay .overlay-detail a i:before{
+  font-size: 35px;
+  position: relative;
+  top: 7px;
+}
 
 div#comparison { 
   width: 100%;
@@ -144,3 +149,34 @@ input[type=range]:focus::-moz-range-thumb {
     max-width: 800px;
     margin: 0 auto;
 }
+
+iframe{
+  width: 100% !important;
+  height: 70vh;
+}
+
+.chart__wrapper{
+  margin-top: 30px;
+}
+
+#problem{
+  min-height: 620px;
+  position: relative;
+}
+
+.video-bg{
+  z-index: initial !important;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+body .top-nav-collapse{
+  background: rgba(50, 60, 70, 1);
+}
+
+.text--overlay{
+  position: absolute;
+  top: 15%;
+  color: #FFF;
+}
+
+ 

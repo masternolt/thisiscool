@@ -46,12 +46,27 @@
     }
   });
 
-  $('.show-gallery').on('click', function(event) {
-    var galleryId = $(this).attr('data-button-gallery');
+  $('#problem').vide({
+    mp4: 'video/pineisland.mp4',
+  },{
+    className: 'video-bg',
+  });
 
-    $('.gallery--holder.active').fadeOut(600).promise().done(function(){
-      $('[data-gallery="'+galleryId+'"]').fadeIn().addClass('active');
-    });
+  $('.charts').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
   });
 
   mountChart();
@@ -270,7 +285,7 @@ function mountChart(){
 // Apply the theme
 Highcharts.setOptions(Highcharts.theme);
 
-  
+
   Highcharts.chart('chart-mass', {
     chart: {
       type: 'column',

@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style-override.css">
 </head>
@@ -27,13 +29,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">IceIsCool</a>
+              <a class="navbar-brand" href="#">ThisIsCool</a>
             </div>
             <div class="collapse navbar-collapse" id="lauraMenu">
               <ul class="nav navbar-nav navbar-right navbar-border">
                 <li class="active"><a href="#main-header">Home</a></li>
                 <li><a href="#problem">The Problem</a></li>
-                <li><a href="#causes">The poles</a></li>
+                <li><a href="#causes">Image Then/Now</a></li>
                 <li><a href="#summary">Summary</a></li>
               </ul>
             </div>
@@ -45,8 +47,8 @@
           <div class="row">
             <div class="col-md-12 wow fadeIn delay-05s">
               <div class="banner-text">
-                <h2>The ice sheets are <span>decreasing</span></h2>
-                <p>and we should be all aware about it.</p>
+                <h2>É uma plataforma que reune as informações das</h2>
+                <p><span>mudanças espaciais/temporais do ártico.</span></p>
               </div>
               <div class="overlay-detail text-center">
                 <a href="#problem"><i class="fa fa-angle-down"></i></a>
@@ -58,22 +60,19 @@
     </div>
   </div>
   <section id="problem" class="section-padding wow fadeIn delay-05s" style="padding: 0;">
-    <div class="container">
-      <div class="row first " style="padding: 80px 0 40px;">
-        <div class="col-md-12">
-          <video style="width: 100%; height: 500px;" controls muted>
-            <source src="video/pineisland.mp4" type="video/mp4">
-          </video>
+	<div class="container-fluid">
+        <div class="container">
+        	<div class="col-md-6 text--overlay">
+        		<h2>Como funciona?</h2>
+        		<p>
+        			Nós descobrimos que já existe muita informação disponível através dos diversos sites da Nasa, porém estas informações estão espalhadas e não são fáceis de encontrar.
+					Com base em informações de diversos sites e missões da NASA, nós catalogamos os dados de maneira fácil de ser compreendida.
+        		</p>
+        	</div>
         </div>
-        <div class="col-md-12 overlay">
-          <div class="overlay-detail text-center">
-            <a href="#poles"><i class="fa fa-angle-down"></i></a>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
-  <section id="poles" class="section-padding wow fadeInUp">
+  <section id="causes" class="section-padding wow fadeInUp">
     <div class="container">
       <div class="row">
         <div class="col-md-12 gallery">
@@ -108,15 +107,23 @@
   <section id="chart">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <div id="chart-mass"></div>
-        </div>
-        <div class="col-md-12">
-        	<div id="chart-global-temperature"></div>
-        </div>
-        <div class="col-md-12">
-        	<iframe data-width="600" data-height="400" width="980" height="653" src="https://www.mapbox.com/bites/00183/polarmap.html#3.53/-0.43/-11.58" allowfullscreen="" frameborder="0"></iframe>
-        </div>
+      	<div class="charts owl-carousel owl-theme">
+      		<div class="item">
+      			<div class="col-md-12 chart__wrapper">
+		          <div id="chart-mass"></div>
+		        </div>	
+      		</div>
+      		<div class="item">
+		        <div class="col-md-12 chart__wrapper">
+		        	<div id="chart-global-temperature"></div>
+		        </div>      			
+      		</div>
+      		<div class="item">
+      			<div class="col-md-12 chart__wrapper">
+		        	<iframe src="https://www.mapbox.com/bites/00183/polarmap.html#3.53/-0.43/-11.58" allowfullscreen="" frameborder="0"></iframe>
+		        </div>	
+      		</div>
+      	</div>
       </div>
     </div>
   </section>
@@ -159,6 +166,8 @@
   <script src="https://code.highcharts.com/highcharts-3d.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="js/jquery.vide.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="js/arcticsMass.json"></script>
   <script type="text/javascript" src="js/arctisMassYears.json"></script>
   <script type="text/javascript" src="js/globalTempYears.json"></script>
