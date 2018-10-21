@@ -1,4 +1,0 @@
-https://climate.nasa.gov/vital-signs/ice-sheets/
-https://climate.nasa.gov/interactives/climate-time-machine
-https://search.earthdata.nasa.gov/search/granules?p=C1000000461-NSIDC_ECS&q=C1000000461-NSIDC_ECS
-https://sealevel.nasa.gov/data

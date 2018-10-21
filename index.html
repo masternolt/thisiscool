@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ice Is Cool</title>
+  <meta name="description" content="ThisIsCool Web page">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans|Roboto:300,400|Questrial|Satisfy">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style-override.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="header">
+    <div class="bg-color">
+      <header id="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#lauraMenu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">IceIsCool</a>
+            </div>
+            <div class="collapse navbar-collapse" id="lauraMenu">
+              <ul class="nav navbar-nav navbar-right navbar-border">
+                <li class="active"><a href="#main-header">Home</a></li>
+                <li><a href="#problem">The Problem</a></li>
+                <li><a href="#causes">The poles</a></li>
+                <li><a href="#summary">Summary</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wow fadeIn delay-05s">
+              <div class="banner-text">
+                <h2>The ice sheets are <span>decreasing</span></h2>
+                <p>and we should be all aware about it.</p>
+              </div>
+              <div class="overlay-detail text-center">
+                <a href="#problem"><i class="fa fa-angle-down"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="problem" class="section-padding wow fadeIn delay-05s" style="padding: 0;">
+    <div class="container">
+      <div class="row first " style="padding: 80px 0 40px;">
+        <div class="col-md-12">
+          <video style="width: 100%; height: 500px;" controls muted>
+            <source src="video/pineisland.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="col-md-12 overlay">
+          <div class="overlay-detail text-center">
+            <a href="#poles"><i class="fa fa-angle-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="poles" class="section-padding wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ">
+          <h2>
+            Changes over the years
+          </h2>
+          <p>
+            Lorem ipsum
+          </p>
+        </div>
+        <div class="col-md-6 gallery">
+          <div class="col-md-12 gallery--holder active" data-gallery="1">
+            <div id="comparison">
+              <figure>
+                <div id="divisor1"></div>
+              </figure>
+              <input type="range" min="0" max="100" value="50" id="slider1" oninput="moveDivisor(1)">
+            </div>            
+          </div>
+          <div class="col-md-12 gallery--holder" data-gallery="2">
+            <div id="comparison">
+              <figure>
+                <div id="divisor2"></div>
+              </figure>
+              <input type="range" min="0" max="100" value="50" id="slider2" oninput="moveDivisor(2)">
+            </div>            
+          </div>
+          <div class="col-md-12 gallery--holder" data-gallery="3">
+            <div id="comparison">
+              <figure>
+                <div id="divisor3"></div>
+              </figure>
+              <input type="range" min="0" max="100" value="50" id="slider3" oninput="moveDivisor(3)">
+            </div>            
+          </div>
+          <div class="gallery-links col-md-12">
+            <div class="col-md-4 text-center">
+              <button class="show-gallery btn btn-new active" data-button-gallery="1">
+                Muir Glacier
+              </button>
+            </div>
+            <div class="col-md-4 text-center">
+              <button class="show-gallery btn btn-new" data-button-gallery="2">
+                Pedersen Glacier
+              </button>
+            </div>
+            <div class="col-md-4 text-center">
+              <button class="show-gallery btn btn-new" data-button-gallery="3">
+                Icesea
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="chart">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="data-chart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-2 text-center-xs bg--white">
+    <div class="container">
+      <!--end row-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer">
+            ThisIsCool
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <ul class="social-list">
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-vimeo"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!--end row-->
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script type="text/javascript" src="js/arcticsMass.json"></script>
+  <script type="text/javascript" src="js/arctisMassYears.json"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+#problem{
+	padding: 0;
+}
+
+#problem .row.first{
+	padding: 80px 0 40px;
+}
+
+#problem h2{
+	margin-bottom: 30px;
+}
+
+#problem .overlay{
+	height: 30px;
+	margin-top: 20px;
+}
+
+#problem .overlay .overlay-detail a i{
+	bottom: 0;
+    color: #2c363e;
+    border: 1px solid #2c363e;
+}
+
+
+
+
+div#comparison { 
+  width: 100%;
+  height: 400px;
+  overflow: hidden; 
+}
+
+div#comparison figure > img { 
+  position: relative;
+  width: 100%;
+}
+
+div#comparison figure{
+	background-image: url('../img/muir_glacier_old.jpg'); 
+  	background-size: cover;
+  	position: relative;
+  	font-size: 0;
+  	width: 100%; 
+  	height: 100%;
+  	margin: 0; 
+}
+
+div#comparison figure div{
+	background-size: cover;
+	position: absolute;
+	width: 50%; 
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+	overflow: hidden;
+	bottom: 0;
+	height: 100%;
+}
+
+/* Gallery 1 */
+
+[data-gallery="1"] #comparison figure { 
+  background-image: url('../img/muir_glacier_today.jpg'); 
+}
+
+[data-gallery="1"] #comparison figure div { 
+  background-image: url('../img/muir_glacier_old.jpg');
+}
+
+/* Gallery 1 */
+
+[data-gallery="2"] #comparison figure { 
+  background-image: url('../img/pedersen_glacier_new.jpg'); 
+}
+
+[data-gallery="2"] #comparison figure div { 
+  background-image: url('../img/pedersen_glacier_old.jpg');
+}
+
+/* Gallery 1 */
+
+[data-gallery="3"] #comparison figure { 
+  background-image: url('../img/icesea_new.jpg'); 
+}
+
+[data-gallery="3"] #comparison figure div { 
+  background-image: url('../img/icesea_old.jpg');
+}
+
+[data-gallery="2"],[data-gallery="3"]{
+	display: none;
+}
+
+input[type=range]{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  position: relative;
+  top: -2rem; left: -2%;
+  background-color: rgba(255,255,255,0.1);
+  width: 102%; 
+}
+input[type=range]:focus { 
+  outline: none; 
+}
+input[type=range]:active { 
+  outline: none;  
+}
+
+input[type=range]::-moz-range-track { 
+  -moz-appearance:none;
+    height:15px;
+    width: 98%;
+    background-color: rgba(255,255,255,0.1); 
+    position: relative;
+    outline: none;    
+ }
+input[type=range]::active { 
+  border: none; 
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width: 20px; height: 15px;   
+    background: #fff;
+    border-radius: 0;
+   }
+input[type=range]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 20px;
+  height: 15px;
+  background: #fff;
+  border-radius: 0;
+     }   
+input[type=range]:focus::-webkit-slider-thumb {
+    background: rgba(255,255,255,0.5);
+   }
+input[type=range]:focus::-moz-range-thumb {
+    background: rgba(255,255,255,0.5);
+   }
+
+
+.gallery-links{
+	margin-top: 30px;
+}
+
+#data-chart {
+    height: 400px; 
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 0 auto;
+}
