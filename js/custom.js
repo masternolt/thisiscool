@@ -61,6 +61,12 @@
     className: 'video-bg',
   });
 
+  $('#measure').vide({
+    mp4: 'video/altura.mp4'
+  },{
+    className: 'measure-bg'
+  });
+
   $('.charts').owlCarousel({
     loop:false,
     margin:10,
@@ -300,7 +306,7 @@ Highcharts.setOptions(Highcharts.theme);
       type: 'area',
     },
     title: {
-      text: 'Arctic mass over the years'
+      text: 'Massa do ártico'
     },
     subtitle: {
       text: ''
@@ -321,14 +327,14 @@ Highcharts.setOptions(Highcharts.theme);
     },
     yAxis: {
       title: {
-        text: 'Ice Mass'
+        text: 'Massa de Gelo'
       }
     },
     series: [{
-      name: 'Before 2000',
+      name: 'Antes de 2000',
       data: arctictMassData,
     },{
-      name: 'After 2000',
+      name: 'Depois de 2000',
       data: arctictMassDataAfter,
     }]
   });
@@ -337,7 +343,7 @@ Highcharts.setOptions(Highcharts.theme);
 Highcharts.chart('chart-global-temperature', {
 
   title: {
-    text: 'Global Temperature over the years'
+    text: 'Temperatura global através dos anos'
   },
 
   xAxis: {
@@ -352,11 +358,11 @@ Highcharts.chart('chart-global-temperature', {
 
   tooltip: {
     headerFormat: '<b>{series.name}</b><br />',
-    pointFormat: 'Temperature variation: {point.y}'
+    pointFormat: 'Variação de temperatura: {point.y}'
   },
 
   series: [{
-    name: 'Global Temperature',
+    name: 'Temperatura Global',
     data: tempVariation,
     pointStart: 1
   }]

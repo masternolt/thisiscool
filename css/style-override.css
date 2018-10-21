@@ -163,12 +163,12 @@ iframe{
   margin-top: 30px;
 }
 
-#problem{
+#problem, #measure{
   min-height: 620px;
   position: relative;
 }
 
-.video-bg{
+.video-bg, .measure-bg{
   z-index: initial !important;
   background-color: rgba(0,0,0,0.5) !important;
 }
@@ -189,4 +189,17 @@ body .top-nav-collapse{
 
 .buttons--holder{
   margin-top: 30px;
+}
+
+body .owl-nav{
+  display: none;
+}
+
+body .owl-dots{
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+#chart{
+  background-color: rgb(68, 71, 80);
 }
